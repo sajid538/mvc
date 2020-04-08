@@ -46,13 +46,14 @@
 				<version>0.8.2</version>
 				<executions>
 					<execution>
+						<id>pre-unit-test</id>
 						<goals>
 							<goal>prepare-agent</goal>
 						</goals>
 					</execution>
 					<!-- attached to Maven test phase -->
 					<execution>
-						<id>report</id>
+						<id>post-unit-test</id>
 						<phase>test</phase>
 						<goals>
 							<goal>report</goal>
